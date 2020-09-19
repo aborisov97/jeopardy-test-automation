@@ -2,7 +2,7 @@ import Page from '../pages/page-jeopardy';
 import { environment } from '../environments/environment'
 
 fixture `Jeopardy Game Start`
-    .page `http://localhost:${environment.project.angular}`;
+    .page `http://localhost:${environment.project.vue}`;
 
 const page = new Page();
 
