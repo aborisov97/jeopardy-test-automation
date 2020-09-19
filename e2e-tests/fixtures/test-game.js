@@ -217,15 +217,18 @@ test('Enter Answers', async t => {
         await t.click(page.nexRoundButton);
 
         await t
-        .typeText(page.finalInput, 'Berlin')
+        .typeText(page.finalInput, 'BERLIN')
+        .typeText(page.range, '800')
         .click(page.finalSubmit)
         .expect(page.playerListItem2.innerText).eql('Spieler 2: 1200');
         await t
         .typeText(page.finalInput, 'WRONG')
+        .typeText(page.range, '400')
         .click(page.finalSubmit)
         .expect(page.playerListItem2.innerText).eql('Spieler 2: 1200');
         await t
-        .typeText(page.finalInput, 'Berlin')
+        .typeText(page.finalInput, 'BERLIN')
+        .typeText(page.range, '100')
         .click(page.finalSubmit)
         .expect(page.playerListItem2.innerText).eql('Spieler 2: 1200');
         await t

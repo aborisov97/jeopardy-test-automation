@@ -36,6 +36,8 @@ export default class Page {
         this.finalInput = Selector('#finalInput');
         this.finalSubmit = Selector('#finalSubmit');
         this.finale = Selector('#finale');
+        this.range = Selector('#range');
+
 
     }
 }
